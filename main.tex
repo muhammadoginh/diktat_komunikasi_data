@@ -1,0 +1,38 @@
+\documentclass[11pt,bibtex]{purakabook}
+
+\title{Komunikasi Data}
+% \subtitle{Diktat Matakuliah TK4306 Komunikasi Data}
+
+\author{Muhammad Ogin Hasanuddin}
+\institute{Institut Teknologi Bandung\\
+2022}
+% \date{May 22, 2022}
+
+% \logostei-logo.png}
+\cover{cover.jpg}
+
+% modify the color in the middle of titlepage
+\definecolor{customcolor}{RGB}{255,163,26}
+\colorlet{coverlinecolor}{customcolor}
+
+\begin{document}
+
+\maketitle
+
+\frontmatter
+\tableofcontents
+% \listoffigures
+% \listoftables
+    
+\mainmatter
+\input{./chapter_1}
+\input{./chapter_2}
+\input{./chapter_3}
+\input{./chapter_4} % Transmisi Digital
+\input{./chapter_5} % Transmisi Analog
+\input{./chapter_6}
+
+\nocite{*}
+\printbibliography[heading=bibintoc, title=\ebibname]
+
+\end{document}

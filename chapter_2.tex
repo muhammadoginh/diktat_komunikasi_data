@@ -1,0 +1,72 @@
+\chapter{Model Jaringan}
+Jaringan adalah kombinasi perangkat keras dan perangkat lunak yang mengirimkan data dari satu lokasi ke lokasi lain. Perangkat keras terdiri dari peralatan fisik yang membawa sinyal dari satu titik jaringan ke titik lainnya. Perangkat lunak terdiri dari set instruksi yang memungkinkan layanan yang kita harapkan dari jaringan. 
+
+Kita dapat membandingkan tugas jaringan dengan tugas memecahkan masalah matematika dengan komputer. Pekerjaan mendasar untuk memecahkan masalah dengan komputer dilakukan oleh perangkat keras komputer. Namun, ini adalah tugas yang sangat membosankan jika hanya perangkat keras yang terlibat. Kami akan membutuhkan sakelar untuk setiap lokasi memori untuk menyimpan dan memanipulasi data. Tugasnya jauh lebih mudah jika perangkat lunak tersedia. Pada level tertinggi, sebuah program dapat mengarahkan proses pemecahan masalah; rincian bagaimana hal ini dilakukan oleh perangkat keras yang sebenarnya dapat diserahkan kepada lapisan perangkat lunak yang dipanggil oleh tingkat yang lebih tinggi. Bandingkan ini dengan layanan yang disediakan oleh jaringan komputer. Misalnya, tugas mengirim e-mail dari satu titik di dunia ke titik lain dapat dipecah menjadi beberapa tugas, masing-masing dilakukan oleh paket perangkat lunak yang terpisah. Setiap paket perangkat lunak menggunakan layanan paket perangkat lunak lain. Pada lapisan terbawah, sebuah sinyal, atau sekumpulan sinyal, dikirimkan dari komputer sumber ke komputer tujuan. Dalam bab ini, kami memberikan gambaran umum tentang lapisan jaringan dan membahas fungsi masing-masing. Deskripsi terperinci dari lapisan-lapisan ini mengikuti bab-bab selanjutnya.
+
+\section{Tugas Layer}
+
+\section{Model OSI}
+
+\section{Layer-layer Model OSI}
+
+\section{Protokol TCP/IP}
+
+\section{Addressing}
+
+
+\section{Ringkasan}
+\begin{itemize}
+  \item[$\odot$] Digital-to-analog conversion is the process of changing one of the characteristics of an analog signal based on the information in the digital data
+  \item[$\odot$] Digital-to-analog conversion can be accomplished in several ways: amplitude shift keying (ASK), frequency shift keying (FSK), and phase shift keying (PSK). Quadrature amplitude modulation (QAM) combines ASK and PSK.
+  \item[$\odot$] In amplitude shift keying, the amplitude of the carrier signal is varied to create signal elements. Both frequency and phase remain constant while the amplitude changes.
+  \item[$\odot$] In frequency shift keying, the frequency of the carrier signal is varied to represent data. The frequency of the modulated signal is constant for the duration of one signal element, but changes for the next signal element if the data element changes. Both peak amplitude and phase remain constant for all signal elements.
+  \item[$\odot$] In phase shift keying, the phase of the carrier is varied to represent two or more different signal elements. Both peak amplitude and frequency remain constant as the phase changes.
+  \item[$\odot$] A constellation diagram shows us the amplitude and phase of a signal element, particularly when we are using two carriers (one in-phase and one quadrature).
+  \item[$\odot$] Quadrature amplitude modulation (QAM) is a combination of ASK and PSK. QAM uses two carriers, one in-phase and the other quadrature, with different amplitude levels for each carrier.
+  \item[$\odot$] Analog-to-analog conversion is the representation of analog information by an analog signal. Conversion is needed if the medium is bandpass in nature or if only a bandpass bandwidth is available to us
+  \item[$\odot$] Analog-to-analog conversion can be accomplished in three ways: amplitude modulation (AM), frequency modulation (FM), and phase modulation (PM).
+  \item[$\odot$] In AM transmission, the carrier signal is modulated so that its amplitude varies with the changing amplitudes of the modulating signal. The frequency and phase of the carrier remain the same; only the amplitude changes to follow variations in the information.
+  \item[$\odot$] In PM transmission, the frequency of the carrier signal is modulated to follow the changing voltage level (amplitude) of the modulating signal. The peak amplitude and phase of the carrier signal remain constant, but as the amplitude of the information signal changes, the frequency of the carrier changes correspondingly.
+  \item[$\odot$] In PM transmission, the phase of the carrier signal is modulated to follow the changing voltage level (amplitude) of the modulating signal. The peak amplitude and frequency of the carrier signal remain constant, but as the amplitude of the information signal changes, the phase of the carrier changes correspondingly.
+\end{itemize}
+
+\section{Latihan}
+
+\subsection*{Pertanyaan ulasan}
+
+\begin{enumerate}
+  \item Describe the goals of multiplexing.
+  \item List three main multiplexing techniques mentioned in this chapter. 
+  \item Distinguish between a link and a channel in multiplexing. 
+  \item Which of the three multiplexing techniques is (are) used to combine analog signals? Which ofthe three multiplexing techniques is (are) used to combine digital signals? 
+  \item Define the analog hierarchy used by telephone companies and list different levels ofthe hierarchy. 
+  \item Define the digital hierarchy used by telephone companies and list different levels of the hierarchy. 
+  \item Which of the three multiplexing techniques is common for fiber optic links? Explain the reason. 
+  \item Distinguish between multilevel TDM, multiple slot TDM, and pulse-stuffed TDM. 
+  \item Distinguish between synchronous and statistical TDM. 
+  \item Define spread spectrum and its goal. List the two spread spectrum techniques discussed in this chapter. 
+  \item Define FHSS and explain how it achieves bandwidth spreading. 
+  \item Define DSSS and explain how it achieves bandwidth spreading.
+\end{enumerate}
+
+\subsection*{Latihan}
+\begin{enumerate}[resume]
+  \item Assume that a voice channel occupies a bandwidth of 4 kHz. We need to multiplex 10 voice channels with guard bands of 500 Hz using FDM. Calculate the required bandwidth.
+  \item We need to transmit 100 digitized voice channels using a pass-band channel of 20 KHz. What should be the ratio of bits/Hz if we use no guard band?
+  \item In the analog hierarchy of Figure 6.9, find the overhead (extra bandwidth for guard band or control) in each hierarchy level (group, supergroup, master group, and jumbo group)
+  \item We need to use synchronous TDM and combine 20 digital sources, each of 100 Kbps. Each output slot carries 1 bit from each digital source, but one extra bit is added to each frame for synchronization. Answer the following questions
+  \item Repeat Exercise 16 if each output slot carries 2 bits from each source
+  \item We have 14 sources, each creating 500 8-bit characters per second. Since only some of these sources are active at any moment, we use statistical TDM to combine these sources using character interleaving. Each frame carries 6 slots at a time, but we need to add four-bit addresses to each slot. Answer the following questions:
+  \item Ten sources, six with a bit rate of 200 kbps and four with a bit rate of 400 kbps are to be combined using multilevel TDM with no synchronizing bits. Answer the following questions about the final stage of the multiplexing
+  \item Four channels, two with a bit rate of 200 kbps and two with a bit rate of 150 kbps, are to be multiplexed using multiple slot TDM with no synchronization bits. Answer the following questions:
+  \item Two channels, one with a bit rate of 190 kbps and another with a bit rate of 180 kbps, are to be multiplexed using pulse stuffing TDM with no synchronization bits. Answer the following questions:
+  \item Answer the following questions about a T-1 line:
+  \item Show the contents of the five output frames for a synchronous TDM multiplexer that combines four sources sending the following characters. Note that the characters are sent in the same order that they are typed. The third source is silent
+  \item Figure 6.34 shows a multiplexer in a synchronous TDM system. Each output slot is only 10 bits long (3 bits taken from each input plus 1 framing bit). What is the output stream? The bits arrive at the multiplexer as shown by the arrows
+  \item Figure 6.35 shows a demultiplexer in a synchronous TDM. If the input slot is 16 bits long (no framing bits), what is the bit stream in each output? The bits arrive at the demultiplexer as shown by the arrows
+  \item Answer the following questions about the digital hierarchy in Figure 6.23
+  \item What is the minimum number of bits in a PN sequence if we use FHSS with a channel bandwidth of B =4 KHz and Bss =100 KHz?
+  \item An FHSS system uses a 4-bit PN sequence. If the bit rate of the PN is 64 bits per second, answer the following questions:
+  \item A pseudorandom number generator uses the following formula to create a random series:
+  \item We have a digital medium with a data rate of 10 Mbps. How many 64-kbps voice channels can be carried by this medium if we use DSSS with the Barker sequence?
+\end{enumerate}
